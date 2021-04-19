@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng các số lẻ trong mảng</title>
+</head>
+<body>
+<h1 align="center"> Tính tổng các số lẻ trong mảng</h1>
+<script>
+    a = Number(prompt("Hãy nhập số a:"));
+    b = Number(prompt("Hãy nhập số b:"));
+    c = Number(prompt("Hãy nhập số c:"));
+    d = Number(prompt("Hãy nhập số d:"));
+    e = Number(prompt("Hãy nhập số e:"));
+    f = Number(prompt("Hãy nhập số f:"));
+
+    sum=Number(0);
+
+    let test = [a,b,c,d,e,f];
+function tongcacsole(){
+    for (i=0; i<test.length;i++) {
+
+        if ((test[i]%2)>0) {
+           sum = sum + test[i]
+        }
+        test[i]=0;
+    }
+
+    alert(sum);
+    }
+    tongcacsole();
+</script>
+
+</body>
+</html>
